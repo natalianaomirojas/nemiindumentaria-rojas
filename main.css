@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+}
+
+/*Menú principal*/
+
+    .menu-list{
+        display:flex;
+        justify-content: space-around;
+        color:grey;
+        font-weight:600;
+    }
+
+    .menu-list span:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        cursor:pointer;
+        color: violet;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+    .menu-list span:hover{
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    .menu-list span a:hover{
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+    .menu-list span a{
+        text-decoration: none;
+        color: grey;
+    }
+
+    .menu-list span a:hover{
+        font-family: Arial, Helvetica, sans-serif;
+        cursor:pointer;
+        color: violet;
+        font-weight: bold;
+        transition: 0.3s ease;
+    }
+
+/*Contenido*/
+
+    main{
+        margin-top:20px;
+        margin-left:40px;
+        margin-right:40px;
+    }
+
+    .font-h1{
+        color:rebeccapurple;
+        font-family:monospace;
+        margin-top:120px;
+        margin-bottom: 10px;
+    }
+
+    .font-h2{
+        color: rosybrown;
+        font-family: fantasy;
+        margin-top:40px; 
+    }
+
+    .font-acerca{
+        color: rosybrown;
+        font-family: fantasy;
+        margin-top:90px; 
+    }
+
+    .font-01{
+        color:rosybrown;
+        font-family: fantasy;
+        margin-top:90px;
+        margin-bottom: 10px;
+    }
+
+    .galeria{
+        color:rosybrown;
+        font-family: fantasy;
+        margin-top:90px;
+        margin-bottom: 10px; 
+    }
+
+    #contac-home{
+        color: grey;
+        font-family: fantasy;
+        margin-top:20px;
+        margin-bottom: 10px;
+        justify-items: center;
+    }
+
+    section h3{
+        margin-top:30px;
+        margin-left:30px;
+        margin-right:30px;
+        margin-bottom: 30px;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    main h4{    
+        font-style: oblique;
+        font-size: larger;
+        font-weight: lighter;
+        margin-top:40px;
+    }
+
+/*Formulario página principal*/
+    .form{
+        margin-top:20px;
+        margin-block-end: 10px;
+    }
+
+
+/*Catálogo*/
+
+    .filtros{
+        justify-items: center;
+    }
+
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+/*Compras*/
+
+    .tab{
+        border-style: ridge;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+/*Pie de página*/
+
+    footer{
+        min-height: 100px;
+        background-color: black;
+        color:#fff;
+        width: 100%;
+        position: absolute;
+    }
+
+    footer div{
+        padding:20px 50px 20px 50px;
+    }
+
+    footer h6{
+        text-align: right;
+    }
+
+    footer div ul{
+        margin-top: 5px;
+    }
+
+    footer div ul a{
+        text-decoration: none;
+        color:#7b7b7b;
+    }
+
+    footer div ul a:hover{
+        text-decoration: underline;
+        transition: 0.3s;
+    }
+
+/*Aplicando grids*/
+
+header{
+    display: grid;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+header img{
+    width: 100px;
+    margin-block-end: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "a b c" 
+    "d e f";
+    grid-gap:1rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.a{
+    transform: rotate(5deg);
+}
+
+.b{
+    transform: rotate(5deg);
+}
+
+.c{
+    transform: rotate(5deg);
+}
+
+.button{
+   width: 100px;
+   height: 100px;
+   transition: width 20s;
+}
+
+form:hover {
+    width: 300px;
+ }
+ 
+
+/* -- MOBILE -- */
+    @media (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    }
+
+/* -- TABLET -- */
+    @media (min-width: 576px) and (max-width: 992px) {
+        .container {
+            grid-template-columns: repeat(4, 1fr);
+        }   
+    }
+
+/* -- DESKTOP -- */
+    @media (min-width: 992px) {
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+        }   
+    }
+    
+    
+
+
+    
+
