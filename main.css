@@ -213,21 +213,25 @@ header img{
     width: 100%;
     -webkit-box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.66); 
     box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.66);
+    max-width: 370px;
 }
 
 .item-gallery-row-1:hover{
     transform: translate(2em, 2em);
+
 }
 
 .item-gallery-row-2{
     transform: translateY(1);
     transition: transform 0.5s ease;
+
 }
 
 .item-gallery-row-2 img{
     width: 100%; 
     -webkit-box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.66); 
     box-shadow: 5px 5px 17px 0px rgba(0,0,0,0.66);
+    max-width: 370px;
 }
     
 .item-gallery-row-2:hover{
