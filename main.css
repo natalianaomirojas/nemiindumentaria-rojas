@@ -62,36 +62,19 @@ header img{
         margin:0;
         padding-top: 20px ;
         padding-left:40px;
-        padding-right:40px; 
+        padding-right:40px;
+        padding-bottom: 40px; 
         background: rgb(2,0,36);
         background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(62,52,56,0) 100%, rgba(0,212,255,1) 100%);
     }
 
-    .font-h1{
-        color:rebeccapurple;
-        font-family:monospace;
-        margin-top:120px;
-        margin-bottom: 10px;
-    }
-
-    .font-h2{
-        color: rosybrown;
-        font-family: fantasy;
-        margin-top:40px; 
-    }
-
-    .font-acerca{
-        color: rosybrown;
-        font-family: fantasy;
-        margin-top:90px; 
-    }
-
-    .font-01{
-        color:rosybrown;
-        font-family: fantasy;
-        margin-top:90px;
-        margin-bottom: 10px;
-    }
+    .contenido-2{
+        margin:0;
+        padding-top: 10px ;
+        padding-left:40px;
+        padding-right:40px;
+        padding-bottom: 40px; 
+        }
 
     #contac-home{
         color: grey;
@@ -181,6 +164,8 @@ header img{
 
 /*aplicando grids, animaciones y transiciones*/
 
+/*index html*/
+
 .grid-container{
     display: grid;
     grid-gap: 50px 100px ;
@@ -237,6 +222,21 @@ header img{
 .item-gallery-row-2:hover{
     transform: translateY(2em);
 }
+
+/*catalogo*/
+
+#carouselExampleCaptions{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 370px;
+    font-style:oblique;
+}
+.carousel-inner{
+    padding: 20px;
+    justify-content: center;
+}
+
 
 /* -- MOBILE -- */
     @media (max-width: 576px) {
