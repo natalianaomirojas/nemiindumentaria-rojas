@@ -1,60 +1,10 @@
 *{
     margin: 0;
 }
-/*encabezado*/
 
-header{
-    display: grid;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    justify-items: center;    
+.icon-nemi{
+justify-items: center;
 }
-
-header img{
-    width: 100px;
-    margin-block-end: 20px;
-}
-
-/*menu principal*/
-
-    .menu-list{
-        display:flex;
-        justify-content: space-around;
-        color:grey;
-        font-weight:600;
-    }
-
-    .menu-list span:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        cursor:pointer;
-        color: violet;
-        font-weight: bold;
-        transition: 0.3s ease;
-    }
-
-    .menu-list span:hover{
-        text-decoration: underline;
-        transition: 0.3s;
-    }
-
-    .menu-list span a:hover{
-        text-decoration: underline;
-        transition: 0.3s;
-    }
-
-    .menu-list span a{
-        text-decoration: none;
-        color: grey;
-    }
-
-    .menu-list span a:hover{
-        font-family: Arial, Helvetica, sans-serif;
-        cursor:pointer;
-        color: violet;
-        font-weight: bold;
-        transition: 0.3s ease;
-    }
 
 /*contenido*/
 
@@ -161,6 +111,24 @@ header img{
         transition: 0.3s;
     }
 
+    footer div fa-brands{
+        text-decoration: none;
+    }
+
+    footer div fa-brands:hover{
+        text-decoration: underline;
+    }
+
+    .redes{
+        color:#7b7b7b;
+    }
+
+    ul{
+        text-align: left;
+        display:inline-block;
+        list-style: none;
+    }
+
 
 /*aplicando grids, animaciones y transiciones*/
 
@@ -237,9 +205,23 @@ header img{
     justify-content: center;
 }
 
+/*loggin*/
+
+.loggin{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    padding: 5px 20px 20px 5px;
+}
 
 /* -- MOBILE -- */
     @media (max-width: 576px) {
+
         .container {
             grid-template-columns: repeat(5, 1fr);
         }
@@ -252,6 +234,10 @@ header img{
 /* -- TABLET -- */
     @media (min-width: 576px) and (max-width: 1200px) {
         
+        nav img{
+            width: 200px;
+        }
+
         .container {
             grid-template-columns: repeat(4, 1fr);
         }   
