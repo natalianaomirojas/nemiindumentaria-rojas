@@ -1,0 +1,49 @@
+/*pie de pagina*/
+
+footer{
+    min-height: 100px;
+    background-color: $color-primary;
+    font-family: 'Times New Roman', Times, serif;
+    color:$color-secondary;
+    width: 100%;
+    position: absolute;
+
+    div{
+        padding:20px 50px 20px 50px;
+    
+        ul{
+            margin-top: 5px;
+            text-align: left;
+            display:inline-block;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color:$other-colors;
+            }
+        }
+    }
+
+    .redes{
+        color:$other-colors;
+    }
+
+    h6{
+        text-align: right;
+    }
+
+}
+
+footer div ul a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+footer div fa-brands{
+    text-decoration: none;
+}
+
+footer div fa-brands:hover{
+    text-decoration: underline;
+}
+
+

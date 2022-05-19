@@ -1,0 +1,214 @@
+* {
+  margin: 0; }
+
+/*encabezado*/
+header {
+  background-color: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  justify-items: center; }
+  header .mariposa {
+    width: 100% !important; }
+
+/*contenido*/
+.contenido {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  background: aqua;
+  background: radial-gradient(circle, aqua 0%, black 150%, white 100%); }
+
+/*pie de pagina*/
+footer {
+  min-height: 100px;
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  width: 100%;
+  position: absolute; }
+  footer div {
+    padding: 20px 50px 20px 50px; }
+    footer div ul {
+      margin-top: 5px;
+      text-align: left;
+      display: inline-block;
+      list-style: none; }
+      footer div ul a {
+        text-decoration: none;
+        color: grey; }
+  footer .redes {
+    color: grey; }
+  footer h6 {
+    text-align: right; }
+
+footer div ul a:hover {
+  text-decoration: underline;
+  transition: 0.3s; }
+
+footer div fa-brands {
+  text-decoration: none; }
+
+footer div fa-brands:hover {
+  text-decoration: underline; }
+
+/*galeria - index html*/
+.grid-container {
+  display: grid;
+  grid-gap: 50px 100px; }
+
+.grid-container div {
+  padding: 5px;
+  justify-content: center; }
+
+.item-gallery-title {
+  grid-column: 1 / span 4;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+  color: black;
+  font-family: fantasy;
+  text-align: center; }
+
+.item-gallery-title:hover {
+  transform: scale(1.5, 1.5); }
+
+.item-gallery-row-1 {
+  transform: translate(1, 1);
+  transition: transform 0.5s ease; }
+
+.item-gallery-row-1 img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  max-width: 370px; }
+
+.item-gallery-row-1:hover {
+  transform: translate(2em, 2em); }
+
+.item-gallery-row-2 {
+  transform: translateY(1);
+  transition: transform 0.5s ease; }
+
+.item-gallery-row-2 img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  max-width: 370px; }
+
+.item-gallery-row-2:hover {
+  transform: translateY(2em); }
+
+/*formulario - index html*/
+.contac-form {
+  margin-bottom: 20px; }
+
+.form {
+  margin-top: 20px;
+  margin-block-end: 10px; }
+
+#contac-home {
+  color: grey;
+  font-family: fantasy;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-items: center; }
+
+/*ingreso/registro*/
+main .loggin {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 20px 20px; }
+
+main .register {
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px 20px 5px; }
+
+main .butterfly {
+  position: relative;
+  width: 100%;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  animation: mymove 5s infinite; }
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+    left: 0px; }
+  25% {
+    top: 0px;
+    left: 100px; }
+  50% {
+    top: 100px;
+    left: 100px; }
+  75% {
+    top: 100px;
+    left: 0px; }
+  100% {
+    top: 0px;
+    left: 0px; } }
+
+/*catalogo*/
+.filtros {
+  justify-items: center;
+  padding-bottom: 10px; }
+
+@keyframes un_efecto {
+  0% {
+    width: 100px; }
+  25% {
+    width: 300px; }
+  50% {
+    width: 200px;
+    background-color: red; } }
+
+.ofertas {
+  font-size: medium;
+  font-style: oblique;
+  padding: 1rem;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  box-shadow: 5px 5px 17px 0px rgba(0, 0, 0, 0.66);
+  max-width: 370px;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 0s; }
+
+#carouselExampleCaptions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 370px;
+  font-style: oblique; }
+
+.carousel-inner {
+  padding: 20px;
+  justify-content: center; }
+
+/*ubicacion*/
+.mapa {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%; }
+
+/* -- MOBILE -- */
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr); }
+  .item-gallery-title {
+    grid-column: 1 /  2; }
+  footer {
+    text-align: center; } }
+
+/* -- TABLET -- */
+@media (min-width: 576px) and (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr); }
+  .item-gallery-title {
+    grid-column: 1 /  3; } }

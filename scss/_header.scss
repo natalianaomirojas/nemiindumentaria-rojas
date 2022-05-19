@@ -1,0 +1,12 @@
+/*encabezado*/
+
+header{
+    background-color: $color-primary;
+    color:$color-secondary;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    justify-items: center;
+    .mariposa{
+            width: 100% !important;
+        }
+}

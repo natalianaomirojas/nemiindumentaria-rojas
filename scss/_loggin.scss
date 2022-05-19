@@ -1,0 +1,32 @@
+/*ingreso/registro*/
+
+main{
+    .loggin{
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .register{
+        display: flex;
+        justify-content: center;
+        padding: 5px 20px 20px 5px;
+    }
+
+    .butterfly{
+        position: relative;
+        width: 100%;
+        max-width: 100px;
+        width: 100px;
+        height: 100px;
+        animation: mymove 5s infinite;
+    }
+
+    @keyframes mymove {
+        0%   {top: 0px; left: 0px;}
+        25%  {top: 0px; left: 100px;}
+        50%  {top: 100px; left: 100px;}
+        75%  {top: 100px; left: 0px;}
+        100% {top: 0px; left: 0px;}
+    }
+}
